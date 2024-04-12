@@ -1,0 +1,7 @@
+set showmode
+set autoindent
+set tapstop=4
+set expandtab
+syntax on
+
+
