@@ -7,17 +7,17 @@ read num1
 echo "Pleace give me another one"
 read num2
 
-// uilizando expr para numero enteros
+# utilizando expr para numero enteros
 suma=$(($num1 + $num2))
 resta=$(expr $num1 - $num2)
 modulo=$(($num1 % $num2))
 
-// utilizando bc para numeros decimales
+# utilizando bc para numeros decimales
 sumaDecimal=$(echo "$num1 + $num2" | bc)
 restaDecimal=$(echo "$num1 - $num2" |bc)
 moduloDecimal=$(echo "$num1 % $num2" | bc)
 
-// Operaciones relacionales
+# Operaciones relacionales
 operadorMayor=$(($num1 > $num2))
 operadorMenor=$(($num1 < $num2))
 operadorIgual=$(($num1 == $num2))
@@ -44,7 +44,7 @@ echo "$num1 >= $num2 = $operadorMayorQue"
 echo "$num1 <= $num2 = $operadorMenorQue"
 echo "$num1 != $num2 = $operadorDiferente"
 
-// -e para caracteres especiales
+# -e para caracteres especiales
 echo -e "\n **** Operadores relacionales ****"
 echo "$verdadero and $verdadero = $(($verdadero && $verdadero))"
 echo "$verdadero and $falso = $(($verdadero && $falso))"
